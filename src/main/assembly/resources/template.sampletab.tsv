@@ -1,0 +1,28 @@
+[MSI]			
+Submission Title	${biobankId}, a pilot BioBank for the BioMedBridges project		
+Submission Identifier	${biobankId}		
+Submission Description	A fictitious biobank for testing and demonstration purposes in the context of the pilot for the BioMedBridges security architecture and framework.		
+Submission Version	1.2		
+Submission Reference Layer	true		
+Submission Release Date	${releaseDate}		
+Submission Update Date	${updateDate}		
+Organization Name	Technische Universität München		
+Organization Address	Arcisstraße 21, D-80333 Munich, Germany		
+Organization URI	http://www.tum.de		
+Organization Email	florian.kohlmayer@tum.de		
+Organization Role	Data Provider		
+			
+Database Name	BMB pilot BBMRI node		
+Database ID	${biobankId}		
+Database URI	https://shibboleth.imse.med.tum.de/bmbproto/jsp/shibboleth/loginShibboleth.jsf?openBBID=${biobankId}		
+			
+[SCD]			
+Group Name	Group Accession	Organism	Term Source ID
+${biobankId}, a pilot BioBank for the BioMedBridges project	${biosdSampleGroupId}	Homo sapiens	 http://purl.obolibrary.org/obo/NCBITaxon_9606
+			
+# Notes			
+# This is a mock-up encoding of http://goo.gl/dvEPGB			
+# We'd like to read diseases and materials in the BBMRI instance, and report corresponding columns on SampleTab 			
+# Disease codes are always based on ICD and can be solved via Bioportal (https://github.com/EBIBioSamples/bioportal-client)			
+# Material labels can be solved by means of ZOOMA (http://www.ebi.ac.uk/fgpt/zooma/, https://github.com/EBIBioSamples/zooma)			
+# Columns are headed either as Characteristic[] or specific headers, according to SampleTab documentation: https://www.ebi.ac.uk/biosamples/help/st_scd.html			
